@@ -1,4 +1,10 @@
-body { font-family: sans-serif; background: #f0f4f8; text-align: center; }
-.container { max-width: 800px; margin: auto; padding: 20px; }
-nav button { padding: 10px 20px; margin: 10px; cursor: pointer; background: #2ecc71; border: none; color: white; border-radius: 5px; }
-#konten { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-top: 20px; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
+.container { max-width: 600px; margin: 50px auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+header h1 { color: #2c3e50; margin-bottom: 5px; }
+nav { margin: 20px 0; border-bottom: 2px solid #eee; padding-bottom: 20px; }
+button { padding: 12px 20px; font-size: 16px; border-radius: 8px; border: none; cursor: pointer; transition: 0.3s; margin: 5px; }
+nav button { background: #3498db; color: white; }
+nav button:hover { background: #2980b9; }
+.btn-quiz { display: block; width: 100%; background: #ecf0f1; color: #2c3e50; text-align: left; margin-bottom: 10px; }
+.btn-quiz:hover { background: #dfe6e9; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
