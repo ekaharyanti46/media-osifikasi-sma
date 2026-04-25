@@ -1,113 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Osifikasi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <h1>🦴 Media Pembelajaran Sistem Rangka</h1>
-</header>
-
-<nav>
-    <button onclick="showSection('home')">Home</button>
-    <button onclick="showSection('materi')">Materi</button>
-    <button onclick="showSection('video')">Video</button>
-    <button onclick="showSection('sendi')">Sendi</button>
-    <button onclick="showSection('quiz')">Quiz</button>
-</nav>
-
-<section id="home" class="content">
-    <h2>Selamat Datang</h2>
-    <img src="images/rangka.png" width="300">
-    <p>Belajar proses osifikasi dan sistem rangka secara interaktif</p>
-</section>
-
 <section id="materi" class="content hidden">
-    <h2>Materi Proses Osifikasi</h2>
-    <p>Osifikasi adalah proses pembentukan tulang.</p>
-    <ol>
-        <li>Pembentukan tulang rawan</li>
-        <li>Pusat osifikasi muncul</li>
-        <li>Aktivitas osteoblas</li>
-        <li>Tulang terbentuk sempurna</li>
-    </ol>
-</section>
+        <div class="timeline-card">
+            <h2>1. Kartilago Hialin (Embrio 9 Minggu)</h2>
+            <p>
+            Pada tahap awal perkembangan embrio, kerangka tubuh masih berupa
+            kartilago hialin yang bersifat lunak dan fleksibel.
+            Kartilago berfungsi sebagai cetakan awal pembentukan tulang.
+            </p>
+        </div>
 
-<section id="video" class="content hidden">
-    <h2>Video Proses Osifikasi</h2>
-    <video width="600" controls>
-        <source src="videos/osifikasi.mp4" type="video/mp4">
-    </video>
-</section>
+        <div class="timeline-card">
+            <h2>2. Terbentuk Pusat Osifikasi Primer</h2>
+            <p>
+            Sel osteoblas mulai aktif membentuk jaringan tulang keras.
+            Pembuluh darah masuk ke bagian tengah tulang (diafisis).
+            </p>
+        </div>
 
-<section id="sendi" class="content hidden">
-    <h2>Jenis Sendi</h2>
-    <img src="images/sendi-engsel.png" width="200">
-    <p>Sendi Engsel</p>
+        <div class="timeline-card">
+            <h2>3. Tulang Spons Mulai Terbentuk (3 Bulan)</h2>
+            <p>
+            Tulang spons terbentuk di bagian dalam tulang.
+            Pembuluh darah berkembang untuk menyuplai nutrisi.
+            </p>
+        </div>
 
-    <img src="images/sendi-peluru.png" width="200">
-    <p>Sendi Peluru</p>
-</section>
+        <div class="timeline-card">
+            <h2>4. Saat Lahir</h2>
+            <p>
+            Rongga medula terbentuk sebagai tempat sumsum tulang.
+            Pusat osifikasi sekunder muncul di epifisis.
+            </p>
+        </div>
 
-<section id="quiz" class="content hidden">
-    <h2>Quiz Susun Tulang</h2>
+        <div class="timeline-card">
+            <h2>5. Anak-anak hingga Dewasa</h2>
+            <p>
+            Epifisis mengalami osifikasi sempurna.
+            Terbentuk tulang kompak, tulang spons, dan cakra epifisis.
+            Saat dewasa cakra epifisis menutup.
+            </p>
+        </div>
 
-    <p>Bagian tubuh manakah tulang femur?</p>
+    </div>
 
-    <button onclick="cekJawaban('Benar')">Paha</button>
-    <button onclick="cekJawaban('Salah')">Kepala</button>
-    <button onclick="cekJawaban('Salah')">Tangan</button>
 
-    <h3 id="hasil"></h3>
-</section>
+    <div class="bagian-tulang">
+        <h1>Bagian-Bagian Tulang</h1>
 
-<script src="script.js"></script>
-</body>
-</html>
-<section id="materi" class="content hidden">
+        <div class="bagian-grid">
+            <div class="bagian-card">Diafisis → Bagian tengah tulang</div>
+            <div class="bagian-card">Epifisis → Ujung tulang</div>
+            <div class="bagian-card">Rongga Medula → Tempat sumsum tulang</div>
+            <div class="bagian-card">Tulang Spons → Tulang berongga</div>
+            <div class="bagian-card">Tulang Kompak → Tulang keras</div>
+            <div class="bagian-card">Cakra Epifisis → Pertumbuhan tulang</div>
+        </div>
+    </div>
 
-<h2>Materi Proses Osifikasi</h2>
 
-<img src="images/osifikasi.jpg" width="700">
-
-<div class="materi-box">
-    <h3>1. Kartilago Hialin (9 Minggu)</h3>
-    <p>
-        Pada tahap awal embrio, rangka masih tersusun dari kartilago hialin
-        yang bersifat lunak.
-    </p>
-</div>
-
-<div class="materi-box">
-    <h3>2. Pusat Osifikasi Primer</h3>
-    <p>
-        Bagian tengah tulang mulai mengeras dan osteoblas aktif membentuk tulang.
-    </p>
-</div>
-
-<div class="materi-box">
-    <h3>3. Tulang Spons Terbentuk (3 Bulan)</h3>
-    <p>
-        Tulang spons mulai berkembang dan pembuluh darah masuk.
-    </p>
-</div>
-
-<div class="materi-box">
-    <h3>4. Saat Lahir</h3>
-    <p>
-        Rongga medula terbentuk dan pusat osifikasi sekunder muncul.
-    </p>
-</div>
-
-<div class="materi-box">
-    <h3>5. Anak hingga Dewasa</h3>
-    <p>
-        Epifisis mengalami osifikasi sempurna dan terbentuk tulang kompak.
-    </p>
-</div>
+    <div class="funfact-box">
+        <h2>💡 Fakta Menarik</h2>
+        <p>
+        Bayi memiliki sekitar 300 tulang saat lahir,
+        namun saat dewasa hanya memiliki 206 tulang
+        karena beberapa tulang menyatu selama proses pertumbuhan.
+        </p>
+    </div>
 
 </section>
