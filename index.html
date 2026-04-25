@@ -1,45 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Osifikasi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Media Pembelajaran Osifikasi</h1>
+<header>
+    <h1>🦴 Media Pembelajaran Sistem Rangka</h1>
+</header>
 
-    <nav>
-        <button onclick="bukaMateri()">Materi & Animasi</button>
-        <button onclick="bukaQuiz()">Mulai Kuis</button>
-    </nav>
+<nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('materi')">Materi</button>
+    <button onclick="showSection('video')">Video</button>
+    <button onclick="showSection('sendi')">Sendi</button>
+    <button onclick="showSection('quiz')">Quiz</button>
+</nav>
 
-    <!-- halaman utama -->
-    <div id="home">
-        <h2>Selamat datang di pembelajaran osifikasi</h2>
-    </div>
+<section id="home" class="content">
+    <h2>Selamat Datang</h2>
+    <img src="images/rangka.png" width="300">
+    <p>Belajar proses osifikasi dan sistem rangka secara interaktif</p>
+</section>
 
-    <!-- halaman materi -->
-    <div id="materi" style="display:none;">
-        <h2>Materi Osifikasi</h2>
-        <p>Osifikasi adalah proses pembentukan tulang.</p>
-        
-        <h3>Tahapan:</h3>
-        <ol>
-            <li>Pembentukan tulang rawan</li>
-            <li>Muncul pusat osifikasi</li>
-            <li>Pembentukan osteoblas</li>
-            <li>Tulang berkembang sempurna</li>
-        </ol>
-    </div>
+<section id="materi" class="content hidden">
+    <h2>Materi Proses Osifikasi</h2>
+    <p>Osifikasi adalah proses pembentukan tulang.</p>
+    <ol>
+        <li>Pembentukan tulang rawan</li>
+        <li>Pusat osifikasi muncul</li>
+        <li>Aktivitas osteoblas</li>
+        <li>Tulang terbentuk sempurna</li>
+    </ol>
+</section>
 
-    <!-- halaman quiz -->
-    <div id="quiz" style="display:none;">
-        <h2>Quiz Osifikasi</h2>
-        <p>Apa fungsi osteoblas?</p>
-        <button>Bentuk tulang</button>
-        <button>Hancurkan tulang</button>
-    </div>
+<section id="video" class="content hidden">
+    <h2>Video Proses Osifikasi</h2>
+    <video width="600" controls>
+        <source src="videos/osifikasi.mp4" type="video/mp4">
+    </video>
+</section>
 
-    <script src="script.js"></script>
+<section id="sendi" class="content hidden">
+    <h2>Jenis Sendi</h2>
+    <img src="images/sendi-engsel.png" width="200">
+    <p>Sendi Engsel</p>
+
+    <img src="images/sendi-peluru.png" width="200">
+    <p>Sendi Peluru</p>
+</section>
+
+<section id="quiz" class="content hidden">
+    <h2>Quiz Susun Tulang</h2>
+
+    <p>Bagian tubuh manakah tulang femur?</p>
+
+    <button onclick="cekJawaban('Benar')">Paha</button>
+    <button onclick="cekJawaban('Salah')">Kepala</button>
+    <button onclick="cekJawaban('Salah')">Tangan</button>
+
+    <h3 id="hasil"></h3>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
