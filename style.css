@@ -37,3 +37,20 @@ img {
     margin: 10px;
     border-radius: 10px;
 }
+.materi-box {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px gray;
+}
+
+.materi-box h3 {
+    color: green;
+}
+
+#materi img {
+    margin-top: 20px;
+    border-radius: 20px;
+}
