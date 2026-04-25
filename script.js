@@ -1,7 +1,11 @@
 function bukaMateri() {
-    alert("Materi Osifikasi akan dibuka");
+    document.getElementById("home").style.display = "none";
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("materi").style.display = "block";
 }
 
 function bukaQuiz() {
-    alert("Quiz dimulai");
+    document.getElementById("home").style.display = "none";
+    document.getElementById("materi").style.display = "none";
+    document.getElementById("quiz").style.display = "block";
 }
