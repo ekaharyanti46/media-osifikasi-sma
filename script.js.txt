@@ -1,0 +1,16 @@
+function bukaMateri() {
+    document.getElementById('konten').innerHTML = `
+        <h3>Proses Osifikasi Endokondral</h3>
+        <p>Tulang panjang berasal dari model tulang rawan hialin...</p>
+        <div style="background:#eee; padding:50px;">[Tempat Animasi Osifikasi]</div>
+    `;
+}
+
+function bukaQuiz() {
+    document.getElementById('konten').innerHTML = `
+        <h3>Kuis Cepat</h3>
+        <p>Sel yang bertugas membentuk matriks tulang adalah...</p>
+        <button onclick="alert('Benar!')">Osteoblas</button>
+        <button onclick="alert('Salah, itu perombak!')">Osteoklas</button>
+    `;
+}

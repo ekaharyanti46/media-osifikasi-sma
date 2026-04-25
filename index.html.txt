@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Osifikasi SMA XI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Osifikasi: Pembentukan Tulang</h1>
+            <p>Media Pembelajaran Biologi Kelas XI</p>
+        </header>
+
+        <nav>
+            <button onclick="bukaMateri()">Materi & Animasi</button>
+            <button onclick="bukaQuiz()">Mulai Kuis</button>
+        </nav>
+
+        <main id="konten">
+            <div id="home">
+                <h2>Selamat Datang!</h2>
+                <p>Klik tombol di atas untuk mulai belajar proses perubahan tulang rawan menjadi tulang keras.</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
