@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Osifikasi</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,6 +12,33 @@
         <button onclick="bukaMateri()">Materi & Animasi</button>
         <button onclick="bukaQuiz()">Mulai Kuis</button>
     </nav>
+
+    <!-- halaman utama -->
+    <div id="home">
+        <h2>Selamat datang di pembelajaran osifikasi</h2>
+    </div>
+
+    <!-- halaman materi -->
+    <div id="materi" style="display:none;">
+        <h2>Materi Osifikasi</h2>
+        <p>Osifikasi adalah proses pembentukan tulang.</p>
+        
+        <h3>Tahapan:</h3>
+        <ol>
+            <li>Pembentukan tulang rawan</li>
+            <li>Muncul pusat osifikasi</li>
+            <li>Pembentukan osteoblas</li>
+            <li>Tulang berkembang sempurna</li>
+        </ol>
+    </div>
+
+    <!-- halaman quiz -->
+    <div id="quiz" style="display:none;">
+        <h2>Quiz Osifikasi</h2>
+        <p>Apa fungsi osteoblas?</p>
+        <button>Bentuk tulang</button>
+        <button>Hancurkan tulang</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
