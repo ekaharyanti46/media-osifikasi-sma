@@ -1,41 +1,37 @@
 function bukaMateri() {
     document.getElementById('konten').innerHTML = `
-        <section style="text-align:left; animation: fadeIn 0.5s;">
-            <h3>Proses Osifikasi Endokondral</h3>
-            <p>Osifikasi endokondral adalah pembentukan tulang dari <b>tulang rawan hialin</b>. Proses ini terjadi pada tulang panjang seperti lengan dan paha.</p>
-            <ol>
-                <li><b>Tahap 1:</b> Pembentukan model tulang rawan.</li>
-                <li><b>Tahap 2:</b> Munculnya pusat osifikasi primer di tengah (diafisis).</li>
-                <li><b>Tahap 3:</b> Pembuluh darah masuk membawa sel osteoblas.</li>
-                <li><b>Tahap 4:</b> Pembentukan pusat osifikasi sekunder di ujung (epifisis).</li>
-            </ol>
-            <div style="background:#e8f4fd; padding:20px; border-radius:10px; border-left:5px solid #2980b9;">
-                <p><i>💡 Tip: Ingatlah bahwa osteoblas membangun, osteoklas merombak!</i></p>
-            </div>
-            <br>
-            <button onclick="location.reload()" style="background:#95a5a6; color:white; border:none; padding:10px; border-radius:5px; cursor:pointer;">Kembali ke Home</button>
-        </section>
+        <div style="text-align: left; animation: fadeIn 0.5s;">
+            <h3 style="color: #2980b9;">Apa itu Osifikasi?</h3>
+            <p>Osifikasi adalah proses pembentukan tulang keras dari tulang rawan atau jaringan ikat.</p>
+            <hr>
+            <h4>Jenis Osifikasi:</h4>
+            <ul>
+                <li><b>Intramembran:</b> Langsung dari jaringan ikat (contoh: tulang tengkorak).</li>
+                <li><b>Endokondral:</b> Dari tulang rawan hialin (contoh: tulang pipa/lengan).</li>
+            </ul>
+            <p><i>💡 Klik "Mulai Kuis" untuk tes pemahamanmu!</i></p>
+        </div>
     `;
 }
 
 function bukaQuiz() {
     document.getElementById('konten').innerHTML = `
-        <section style="animation: fadeIn 0.5s;">
-            <h3>Kuis Interaktif</h3>
-            <p>Manakah sel yang berfungsi untuk merombak atau menghancurkan sel-sel tulang yang sudah rusak?</p>
-            <button onclick="cekJawaban(false)" class="btn-quiz">A. Osteoblas</button>
-            <button onclick="cekJawaban(true)" class="btn-quiz">B. Osteoklas</button>
-            <button onclick="cekJawaban(false)" class="btn-quiz">C. Osteosit</button>
-            <div id="feedback" style="margin-top:20px; font-weight:bold;"></div>
-        </section>
+        <div style="animation: fadeIn 0.5s;">
+            <h3>Kuis Kilat ⚡</h3>
+            <p>Sel yang berfungsi sebagai <b>pembentuk</b> tulang baru adalah...</p>
+            <button class="quiz-opt" onclick="cek(true)">A. Osteoblas</button>
+            <button class="quiz-opt" onclick="cek(false)">B. Osteoklas</button>
+            <button class="quiz-opt" onclick="cek(false)">C. Osteosit</button>
+            <div id="hasil" style="margin-top: 15px; font-weight: bold;"></div>
+        </div>
     `;
 }
 
-function cekJawaban(benar) {
-    const feedback = document.getElementById('feedback');
+function cek(benar) {
+    const hasil = document.getElementById('hasil');
     if(benar) {
-        feedback.innerHTML = "<span style='color:green;'>✅ Benar! Osteoklas berfungsi merombak tulang.</span>";
+        hasil.innerHTML = "<span style='color: green;'>✅ Benar! Osteoblas adalah pembangun.</span>";
     } else {
-        feedback.innerHTML = "<span style='color:red;'>❌ Salah. Ayo baca materi lagi!</span>";
+        hasil.innerHTML = "<span style='color: red;'>❌ Salah! Osteoklas itu perombak.</span>";
     }
 }
